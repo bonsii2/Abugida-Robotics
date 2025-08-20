@@ -7,6 +7,7 @@ import robot3 from "../assets/robot-writing-with-pen__1_-removebg-preview.png";
 import robot4 from "../assets/robot-with-pliers-removebg-preview.png";
 import EventsSection from "../components/EventSection";
 import UniqueFeaturesPartners from "./UniquePartners";
+import StudentSupportPage from "./supportStudent";
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -153,6 +154,7 @@ const HomePage = () => {
       </section>
       <EventsSection />
       <UniqueFeaturesPartners />
+      <StudentSupportPage />
     </div>
   );
 };
