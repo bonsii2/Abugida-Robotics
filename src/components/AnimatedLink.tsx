@@ -5,20 +5,22 @@ import { Children, type ReactNode } from "react";
 interface AnimatedLInkProps {
     to: string,
     children: string,
+    onclick?: () => void,
    
    
 }
 
- const  AnimatedLink = ({to, children}: AnimatedLInkProps) =>{
+ const  AnimatedLink = ({to, children, onclick}: AnimatedLInkProps) =>{
    
     return (
       <Link
         to={to}
-        
+        onClick={onclick}
         className="relative font-bold inline-block pb-1
     after:content-[''] after:absolute after:bottom-0 after:left-0 
     after:w-0 after:h-[2px] after:bg-gold 
     after:transition-all after:duration-300 hover:after:w-full"
+        
       >
         {children}
       </Link>

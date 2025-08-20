@@ -15,9 +15,12 @@ const Navbar = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
+  const closeMobileMenu =() =>{
+    setIsOpen(false);
+  }
 
   return (
-    <nav className="bg-white dark:bg-roboGray text-gray-700 shadow-md fixed w-full z-50">
+    <nav className="bg-white dark:bg-roboGray text-gray-700 shadow-md fixed top-0 left-0 w-full z-50   ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex justify-start gap-4 align-center text-2xl font-bold text-roboDark dark:text-roboBlue">
@@ -65,13 +68,33 @@ const Navbar = () => {
 
       {isOpen && (
         <div className="md:hidden flex flex-col bg-white dark:bg-roboGray text-gray-700 dark:text-gray-200 px-4 space-y-4">
-          <AnimatedLink to="/home" children="Home"  />
-          <AnimatedLink to="/about" children="About" />
-          <AnimatedLink to="/courses" children="Courses" />
-          <AnimatedLink to="/activities" children="Activities" />
-          <AnimatedLink to="/blog" children="Blog" />
-          <AnimatedLink to="/RobotShop" children="RObot Shop" />
-          <AnimatedLink to="/GSTEMI" children="G-STEMI" />
+          <AnimatedLink to="/home" children="Home" onclick={closeMobileMenu} />
+          <AnimatedLink
+            to="/about"
+            children="About"
+            onclick={closeMobileMenu}
+          />
+          <AnimatedLink
+            to="/courses"
+            children="Courses"
+            onclick={closeMobileMenu}
+          />
+          <AnimatedLink
+            to="/activities"
+            children="Activities"
+            onclick={closeMobileMenu}
+          />
+          <AnimatedLink to="/blog" children="Blog" onclick={closeMobileMenu} />
+          <AnimatedLink
+            to="/RobotShop"
+            children="RObot Shop"
+            onclick={closeMobileMenu}
+          />
+          <AnimatedLink
+            to="/GSTEMI"
+            children="G-STEMI"
+            onclick={closeMobileMenu}
+          />
         </div>
       )}
     </nav>
