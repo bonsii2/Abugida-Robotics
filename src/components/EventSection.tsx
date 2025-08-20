@@ -1,29 +1,34 @@
 // components/EventsSection.tsx
 import { motion } from "framer-motion";
 import EventCard from "./EventCart";
+import codingcall from "../assets/roboticstrainer.jpg";
+import image2 from "../assets/robofest.jpg";
+import image3 from "../assets/summercamp.jpg";
+import image4 from "../assets/wintertraning.jpg";
 
 const EventsSection = () => {
   // Sample events data
   const events = [
     {
       id: 1,
-      title: "Robotics Workshop",
+      title:
+        "Robotics & Coding call for trainees ( Registration Deadline July 12 2025 )",
       date: "June 15, 2023",
       time: "10:00 AM - 4:00 PM",
       location: "Abugida Innovation Center",
       description:
-        "Hands-on workshop on building and programming your first robot. Perfect for beginners and enthusiasts.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+        "Build Innovative projects using Al and Robotics. Take part in different international tournaments and gain guidance to launch your startup ",
+      image: codingcall,
     },
     {
       id: 2,
-      title: "AI & Machine Learning Summit",
+      title: "Robofest Ethiopia 2025",
       date: "June 22, 2023",
       time: "9:00 AM - 5:00 PM",
       location: "Tech Conference Hall",
       description:
-        "Learn about the latest advancements in AI and machine learning from industry experts.",
-      image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6",
+        "Join us for an exhilarating day at Robofest Ethiopia 2025! This premier robotics competition will bring together innovators, creators, and enthusiasts from across the country to showcase their skills and creativity.",
+      image: image2,
     },
     {
       id: 3,
@@ -32,18 +37,18 @@ const EventsSection = () => {
       time: "1:00 PM - 6:00 PM",
       location: "City Sports Arena",
       description:
-        "Watch professional drone pilots compete in an exciting race through challenging obstacles.",
-      image: "https://images.unsplash.com/photo-1513084779736-d6d66169c2d9",
+        "Registration for the 2024/2025 winter trainning season and participation in International Robotics Competitions at Abugida Partner Institutions.",
+      image: image3,
     },
     {
       id: 4,
-      title: "STEM Education Fair",
+      title: "Robotics & Coding call for Trainees",
       date: "July 15, 2023",
       time: "11:00 AM - 3:00 PM",
       location: "Community Education Center",
       description:
-        "Discover innovative STEM programs and resources for students of all ages.",
-      image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d",
+        "TRAINNINGS DELIVERED â€¢ Robotics with arduino â€¢ Advanced Robotics with Al â€¢ Mobile App Development â€¢ Coding for kids â€¢ Robotics for kids â€¢ 3D modelling & 3D printing OPPORTUNITIES Compete at the International Robotics Championship, Michigan USA and get a chance to win a scholarship.",
+      image: image4
     },
   ];
 

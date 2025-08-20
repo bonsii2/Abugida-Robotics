@@ -6,6 +6,7 @@ import robot2 from "../assets/robot-holding-light-bulb-removebg-preview.png";
 import robot3 from "../assets/robot-writing-with-pen__1_-removebg-preview.png";
 import robot4 from "../assets/robot-with-pliers-removebg-preview.png";
 import EventsSection from "../components/EventSection";
+import UniqueFeaturesPartners from "./UniquePartners";
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -151,6 +152,7 @@ const HomePage = () => {
         </div>
       </section>
       <EventsSection />
+      <UniqueFeaturesPartners />
     </div>
   );
 };

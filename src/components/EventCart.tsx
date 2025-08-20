@@ -40,12 +40,12 @@ const EventCart = ({event, index}: EventCartProps) => {
               {event.title}
             </h3>
             <div className="text-right">
-              <p className="text-blue-600 dark:text-blue-400 font-semibold">
+              {/* <p className="text-blue-600 dark:text-blue-400 font-semibold">
                 {event.date}
               </p>
               <p className="text-gray-500 dark:text-gray-400 text-sm">
                 {event.time}
-              </p>
+              </p> */}
             </div>
           </div>
           <p className="text-gray-600 dark:text-gray-300 mb-2 flex items-center ">
