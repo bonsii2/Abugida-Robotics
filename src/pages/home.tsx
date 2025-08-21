@@ -8,6 +8,7 @@ import robot4 from "../assets/robot-with-pliers-removebg-preview.png";
 import EventsSection from "../components/EventSection";
 import UniqueFeaturesPartners from "./UniquePartners";
 import StudentSupportPage from "./supportStudent";
+import AwardsTestimonialsPage from "../pages/AwardTestimonial";
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -155,6 +156,7 @@ const HomePage = () => {
       <EventsSection />
       <UniqueFeaturesPartners />
       <StudentSupportPage />
+      <AwardsTestimonialsPage />
     </div>
   );
 };

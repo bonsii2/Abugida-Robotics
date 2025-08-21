@@ -107,12 +107,12 @@ const UniqueFeaturesPartners = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left Section: What Makes Us Unique */}
           <div className="h-full">
-            <h2 className="text-3xl font-bold mb-12 text-gray-800 dark:text-white text-center lg:text-left">
+            {/* <h2 className="text-3xl font-bold mb-12 text-gray-800 dark:text-white text-center lg:text-left">
               What Makes Us{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                 Unique
               </span>
-            </h2>
+            </h2> */}
 
             <div className="space-y-3 h-full flex flex-col justify-center">
               {features.map((feature, index) => (
