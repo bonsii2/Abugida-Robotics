@@ -62,27 +62,35 @@ const StudentSupportPage = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {/* Left Section: Image with Glow Effect */}
-          {/* <div className="relative rounded-2xl overflow-hidden shadow-2xl"> */}
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 flex items-end">
-              <div className="p-8 text-center w-full">
-                <h2 className="text-4xl font-bold text-white mb-3">
-                  Shape the Future
-                </h2>
-                <p className="text-blue-200 text-lg">
-                  Your support makes innovation accessible to all
-                </p>
-              </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 flex items-end">
+            <div className="p-8 text-center w-full">
+              <h2 className="text-4xl font-bold text-white mb-3">
+                Shape the Future
+              </h2>
+              <p className="text-blue-200 text-lg">
+                Your support makes innovation accessible to all
+              </p>
             </div>
-            <div className="  rounded-2xl">
+          </div>
+          <div className="relative rounded-2xl overflow-hidden">
             <img
               src={supportrobot}
               alt="Student with robot"
-              className="w-full h-full object-contain min-h-[600px] transform hover:scale-105 transition-transform duration-700"
+              className="w-full h-full object-contain min-h-[300px] md:min-h-[400px] lg:min-h-[500px] xl:min-h-[600px] transform hover:scale-105 transition-transform duration-700"
             />
+
+            {/* Text Overlay - Responsive positioning */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center px-4 py-6 md:py- 20 lg:py-13   rounded-xl max-w-[90%] md:max-w-[80%] lg:max-w-[70%]">
+                <h2 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl font-bold text-white pt-48">
+                  Sponsor Our <span className="text-green-400">Students</span>
+                </h2>
+              </div>
+            </div>
+
             {/* Floating elements */}
-            <div className="absolute top-6 right-6 w-6 h-6 rounded-full bg-blue-500 animate-pulse"></div>
-            <div className="absolute bottom-20 left-8 w-4 h-4 rounded-full bg-purple-500 animate-ping"></div>
+            <div className="absolute top-4 right-4 md:top-6 md:right-6 w-4 h-4 md:w-6 md:h-6 rounded-full bg-blue-500 animate-pulse"></div>
+            <div className="absolute bottom-12 left-4 md:bottom-20 md:left-8 w-3 h-3 md:w-4 md:h-4 rounded-full bg-purple-500 animate-ping"></div>
           </div>
 
           {/* Right Section: Sponsorship Cards */}
@@ -134,22 +142,6 @@ const StudentSupportPage = () => {
                 </div>
               </div>
             ))}
-
-            {/* Additional Info */}
-            <div className="mt-4 rounded-xl p-5 bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-blue-700/30">
-              <div className="flex items-center">
-                <div className="text-2xl mr-3">✨</div>
-                <div>
-                  <h3 className="text-sm font-semibold text-blue-300 mb-1">
-                    Your Impact
-                  </h3>
-                  <p className="text-blue-200 text-xs">
-                    Every sponsorship provides resources, equipment, and
-                    opportunities for students to explore robotics.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
