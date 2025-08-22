@@ -9,6 +9,7 @@ import EventsSection from "../components/EventSection";
 import UniqueFeaturesPartners from "./UniquePartners";
 import StudentSupportPage from "./supportStudent";
 import AwardsTestimonialsPage from "../pages/AwardTestimonial";
+import ContactPage from "../pages/contactPage";
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -157,6 +158,7 @@ const HomePage = () => {
       <UniqueFeaturesPartners />
       <StudentSupportPage />
       <AwardsTestimonialsPage />
+      <ContactPage />
     </div>
   );
 };
