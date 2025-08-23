@@ -35,13 +35,13 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex space-x-8 text-gray-700 dark:text-gray-200">
-            <AnimatedLink to="/home" children="Home" />
+            <AnimatedLink to="/" children="Home" />
             <AnimatedLink to="/about" children="About" />
             <AnimatedLink to="/courses" children="Courses" />
             <AnimatedLink to="/activities" children="Activities" />
             <AnimatedLink to="/blog" children="Blog" />
             <AnimatedLink to="/RobotShop" children="RObot Shop" />
-            <AnimatedLink to="/GSTEMI" children="G-STEMI" />
+            <AnimatedLink to="/gstemi" children="G-STEMI" />
           </div>
 
           <div className="flex items-center space-x-4">

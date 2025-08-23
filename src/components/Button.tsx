@@ -19,7 +19,7 @@ const AnimatedButton = ({
     "px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center";
   const variantCLasses = {
     primary:
-      "bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700",
+      "bg-blue-500 text-white hover:from-blue-700 hover:to-purple-700",
     secondary:
       "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600",
   };

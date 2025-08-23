@@ -9,6 +9,7 @@ import {
   Linkedin,
   MessageCircle,
 } from "lucide-react";
+import { href } from "react-router-dom";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -98,7 +99,7 @@ const ContactPage = () => {
                     <span className="font-semibold">Monday - Saturday</span>
                     <span>8:00 AM - 5:00 PM</span>
                   </div>
-                  <div className="flex flex-col">
+                  <div className="flex gap-2">
                     <span className="font-semibold">Sunday</span>
                     <span className="text-red-500">Closed</span>
                   </div>
@@ -116,7 +117,7 @@ const ContactPage = () => {
                 <div className="mb-6 p-3 rounded-lg bg-blue-50 dark:bg-gray-700">
                   <div className="flex items-center justify-between">
                     <span className="font-semibold text-blue-700 dark:text-blue-300">
-                      +1 (555) 123-ROBO
+                      +251 91 145 0969
                     </span>
                     <button className="p-2 rounded-full bg-blue-100 dark:bg-blue-600 text-blue-600 dark:text-white hover:bg-blue-200 dark:hover:bg-blue-500 transition-colors">
                       <Phone size={16} />
@@ -135,16 +136,19 @@ const ContactPage = () => {
                         icon: Facebook,
                         label: "Facebook",
                         color: "bg-blue-500 hover:bg-blue-600",
+                        href: "https://web.facebook.com/groups/828907674134825?_rdc=1&_rdr#",
                       },
                       {
                         icon: Youtube,
                         label: "YouTube",
                         color: "bg-red-500 hover:bg-red-600",
+                        href: "https://www.youtube.com/@abugidaroboticstechnologya682",
                       },
                       {
                         icon: Linkedin,
                         label: "LinkedIn",
                         color: "bg-blue-700 hover:bg-blue-800",
+                        href: "https://www.linkedin.com/company/abugida-robotics-and-technology-center/ ",
                       },
                       {
                         icon: MessageCircle,
@@ -154,7 +158,7 @@ const ContactPage = () => {
                     ].map((social, index) => (
                       <a
                         key={index}
-                        href="#"
+                        href={social.href}
                         className={`flex items-center justify-center p-3 rounded-full text-white transition-all duration-300 ${social.color}`}
                       >
                         <social.icon size={20} />

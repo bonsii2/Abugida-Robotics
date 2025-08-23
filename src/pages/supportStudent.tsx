@@ -98,7 +98,7 @@ const StudentSupportPage = () => {
             {sponsorshipOptions.map((option, index) => (
               <div
                 key={index}
-                className={`rounded-2xl p-6 bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 shadow-xl transition-all duration-700 transform hover:scale-[1.02] hover:shadow-2xl ${
+                className={`rounded-2xl p-6  bg-gray-500 border border-gray-700 shadow-xl transition-all duration-700 transform hover:scale-[1.02] hover:shadow-2xl ${
                   visibleCards[index]
                     ? "translate-x-0 opacity-100"
                     : "translate-x-20 opacity-0"
@@ -120,7 +120,7 @@ const StudentSupportPage = () => {
                       href={option.telegramLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg transition-all duration-300 hover:from-blue-500 hover:to-purple-500 hover:shadow-lg group"
+                      className="inline-flex items-center px-5 py-2.5 bg-blue-500 text-white font-medium rounded-lg transition-all duration-300 hover:from-blue-500 hover:to-purple-500 hover:shadow-lg group"
                     >
                       {option.buttonText}
                       <svg
