@@ -11,7 +11,7 @@ import RobotShop from './pages/RoboticShop';
 function Routers() {
   return (
     <Routes>
-      <Route path="/" index element={<HomePage />} />
+      <Route path="/"  element={<HomePage />} />
       <Route path="/about" element={<About />} />
       <Route path="/activities" element={<Activities />} />
       <Route path="/blog" element={<Blog />} />

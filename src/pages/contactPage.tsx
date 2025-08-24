@@ -247,7 +247,7 @@ const ContactPage = () => {
             <div className="mt-8 p-4 rounded-lg bg-blue-50 dark:bg-gray-700 border border-blue-200 dark:border-gray-600">
               <p className="text-sm text-blue-700 dark:text-blue-300">
                 <strong>Prefer direct contact?</strong> Call us at{" "}
-                <span className="font-semibold">+1 (555) 123-ROBO</span> or
+                <span className="font-semibold"> +251 91 145 0969</span> or
                 email{" "}
                 <span className="font-semibold">
                   contact@abugidarobotics.com
