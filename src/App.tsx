@@ -1,21 +1,20 @@
-import { useState } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import './App.css'
-import HomePage from './pages/home'
-import Routes from './routes';
-import { BrowserRouter as Router } from 'react-router-dom'; 
+import Routers from './routes';
+import HomePage from './pages/home';
+
 
 function App() {
   
 
   return (
- 
-    <div className="bg-white">
-      <Navbar />
-      <HomePage />
-      <Routes />
-    </div>
-  
+    <Router>
+      <div className="bg-white">
+        <Navbar />
+        <Routers />
+      </div>
+    </Router>
   );
 }
 

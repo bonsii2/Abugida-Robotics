@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import Logo from "../assets/image.png";
-import { Link } from "react-router-dom";
 import AnimatedLink from "./AnimatedLink";
 
 const Navbar = () => {
@@ -68,32 +67,32 @@ const Navbar = () => {
 
       {isOpen && (
         <div className="md:hidden flex flex-col bg-white dark:bg-roboGray text-gray-700 dark:text-gray-200 px-4 space-y-4">
-          <AnimatedLink to="/home" children="Home" onclick={closeMobileMenu} />
+          <AnimatedLink to="/" children="Home" onClick={closeMobileMenu} />
           <AnimatedLink
             to="/about"
             children="About"
-            onclick={closeMobileMenu}
+            onClick={closeMobileMenu}
           />
           <AnimatedLink
             to="/courses"
             children="Courses"
-            onclick={closeMobileMenu}
+            onClick={closeMobileMenu}
           />
           <AnimatedLink
             to="/activities"
             children="Activities"
-            onclick={closeMobileMenu}
+            onClick={closeMobileMenu}
           />
-          <AnimatedLink to="/blog" children="Blog" onclick={closeMobileMenu} />
+          <AnimatedLink to="/blog" children="Blog" onClick={closeMobileMenu} />
           <AnimatedLink
             to="/RobotShop"
             children="RObot Shop"
-            onclick={closeMobileMenu}
+            onClick={closeMobileMenu}
           />
           <AnimatedLink
-            to="/GSTEMI"
+            to="/gstemi"
             children="G-STEMI"
-            onclick={closeMobileMenu}
+            onClick={closeMobileMenu}
           />
         </div>
       )}
