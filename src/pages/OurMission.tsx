@@ -1,44 +1,44 @@
 import React from "react";
-import { Target, Eye, Goal } from "lucide-react";
+import Logo from "../assets/logo.jpg";
+import { Target, Eye, Goal, Sparkles } from "lucide-react";
 
-const MissionSection = () => {
+const FancyMissionPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-900 py-16 px-4">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-4">
-            Our Mission & Vision
-          </h1>
-          <p className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
-            Driving innovation through robotics and technology education
-          </p>
+    <div className="min-h-screen bg-gradient-to-br md:py-16 from-blue-50 via-purple-50 to-indigo-50 dark:from-gray-900 dark:via-black dark:to-purple-900 py-20 px-4">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-12">
+        {/* Logo Section with Animated Border */}
+        <div className="relative w-full lg:w-2/5 flex justify-center">
+          <div className="relative">
+            {/* Animated border container */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full animate-spin-slow opacity-70"></div>
+
+            {/* Glow effect */}
+            <div className="absolute -inset-2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full blur-xl opacity-30 animate-pulse"></div>
+
+            {/* Logo image */}
+            <div className="relative rounded-full p-2 bg-white dark:bg-gray-800 shadow-2xl">
+              <img
+                src={Logo}
+                className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white dark:border-gray-700 shadow-lg"
+                alt="Abugida Robotics logo"
+              />
+            </div>
+
+            {/* Floating elements around logo */}
+            <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full animate-bounce opacity-80"></div>
+            <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-purple-500 rounded-full animate-bounce opacity-80 delay-300"></div>
+            <div className="absolute -top-6 left-10 w-4 h-4 bg-pink-500 rounded-full animate-bounce opacity-80 delay-700"></div>
+          </div>
         </div>
 
-        {/* Main Content Container */}
-        <div className="relative flex items-center justify-center min-h-[600px]">
-          {/* Central Logo Container with Gradient Border */}
-          <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1 shadow-2xl">
-            <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center p-8">
-              {/* Logo Content */}
-              <div className="text-center">
-                <div className="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                  ARTC
-                </div>
-                <h2 className="text-lg md:text-xl font-semibold text-gray-800 dark:text-white">
-                  Abugida Robotics and Technology Center
-                </h2>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
-                  Fueled by a passion for robotics and technology
-                </p>
-              </div>
-            </div>
-          </div>
+        {/* Content Section */}
+        <div className="w-full lg:w-3/5 space-y-8">
+          {/* Mission Card */}
+          <div className="relative group">
+            {/* Animated border */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-green-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-border-glow"></div>
 
-          {/* Circular Content Items */}
-          <div className="absolute inset-0">
-            {/* Mission Card */}
-            <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-100 bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl border-2 border-blue-200 dark:border-blue-700 hover:shadow-2xl transition-all duration-300">
+            <div className="relative bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-100 dark:border-gray-700">
               <div className="flex items-start mb-4">
                 <div className="bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
                   <Target
@@ -46,21 +46,25 @@ const MissionSection = () => {
                     size={24}
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+                <h1 className="font-bold text-2xl bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
                   Our Mission
-                </h3>
+                </h1>
               </div>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Our mission is to cultivate a diverse and inclusive learning
-                environment where students can discover the wonders of robotics,
-                coding, and programming. We aim to ignite their curiosity,
-                nurture their creativity, and equip them with the necessary
-                tools to become the future pioneers of technology.
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quibusdam, iure reprehenderit voluptatum nisi facilis itaque
+                repellat unde quo nulla, veniam accusantium illo quisquam fugit
+                blanditiis eum a perspiciatis.
               </p>
             </div>
+          </div>
 
-            {/* Vision Card */}
-            <div className="absolute left-1 w-80 bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl border-2 border-purple-200 dark:border-purple-700 hover:shadow-2xl transition-all duration-300">
+          {/* Vision Card */}
+          <div className="relative group">
+            {/* Animated border */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-border-glow"></div>
+
+            <div className="relative bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-100 dark:border-gray-700">
               <div className="flex items-start mb-4">
                 <div className="bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
                   <Eye
@@ -68,21 +72,25 @@ const MissionSection = () => {
                     size={24}
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+                <h1 className="font-bold text-2xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                   Our Vision
-                </h3>
+                </h1>
               </div>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                We envision a world where technology is not a barrier, but
-                rather a bridge that connects individuals and communities.
-                Through our interactive programs and workshops, we strive to
-                bridge the digital divide and empower individuals to become
-                responsible and innovative users of technology.
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quibusdam, iure reprehenderit voluptatum nisi facilis itaque
+                repellat unde quo nulla, veniam accusantium illo quisquam fugit
+                blanditiis eum a perspiciatis.
               </p>
             </div>
+          </div>
 
-            {/* Goal Card */}
-            <div className="absolute  right-3   w-64 bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl border-2 border-green-200 dark:border-green-700 hover:shadow-2xl transition-all duration-300">
+          {/* Goal Card */}
+          <div className="relative group">
+            {/* Animated border */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-green-600 to-teal-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-border-glow"></div>
+
+            <div className="relative bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-100 dark:border-gray-700">
               <div className="flex items-start mb-4">
                 <div className="bg-green-100 dark:bg-green-900 p-3 rounded-full mr-4">
                   <Goal
@@ -90,24 +98,47 @@ const MissionSection = () => {
                     size={24}
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+                <h1 className="font-bold text-2xl bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent">
                   Our Goal
-                </h3>
+                </h1>
               </div>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Our goal is to foster a thriving community of
-                technologically-empowered individuals who can harness the power
-                of robotics and coding to drive innovation and solve real-world
-                challenges. We are committed to creating a nurturing environment
-                where students can explore their passions and unlock their full
-                potential.
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quibusdam, iure reprehenderit voluptatum nisi facilis itaque
+                repellat unde quo nulla, veniam accusantium illo quisquam fugit
+                blanditiis eum a perspiciatis.
               </p>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Decorative elements */}
+      <div className="absolute top-20 left-10 w-20 h-20 bg-blue-400/20 rounded-full blur-xl"></div>
+      <div className="absolute bottom-20 right-20 w-24 h-24 bg-purple-400/20 rounded-full blur-xl"></div>
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-green-400/20 rounded-full blur-xl"></div>
+
+      {/* Add animation styles to your global CSS */}
+      <style>
+        {`
+          @keyframes spin-slow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+          @keyframes border-glow {
+            0%, 100% { opacity: 0.25; }
+            50% { opacity: 0.5; }
+          }
+          .animate-spin-slow {
+            animation: spin-slow 10s linear infinite;
+          }
+          .animate-border-glow {
+            animation: border-glow 2s ease-in-out infinite;
+          }
+        `}
+      </style>
     </div>
   );
 };
 
-export default MissionSection;
+export default FancyMissionPage;
