@@ -1,8 +1,9 @@
 import React from 'react'
+import MissionSection from "./OurMission";
 
 function About() {
   return (
-    <div>About</div>
+    <MissionSection />
   )
 }
 

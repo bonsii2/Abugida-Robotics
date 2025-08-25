@@ -87,14 +87,17 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-gold">Contact Us</h4>
             <div className="space-y-3">
               <div className="flex-col items-start">
-                <MapPin className="mt-1 mr-3 text-gold" size={18} />
-                <span className="text-gray-300 block">
+                <span className="text-gray-300 flex">
+                  <MapPin className="mt-1 mr-3 text-red-600" size={18} />
                   Winget Traffic Sefer, Addis Ababa, Ethiopia
                 </span>
-                <span className="text-gray-300 block">
+                <span className="text-gray-300 flex">
+                  <MapPin className="mt-1 mr-3 text-red-600" size={18} />
                   4kilo, Abrehot library, Addis Ababa, Ethiopia
                 </span>
-                <span className="text-gray-300 block">
+
+                <span className="text-gray-300 flex">
+                  <MapPin className="mt-1 mr-3 text-red-600" size={18} />
                   Bolebulbula, Kilimanjaro Trading Plc, Addis Ababa, Ethiopia
                 </span>
               </div>
