@@ -10,6 +10,7 @@ import UniqueFeaturesPartners from "./UniquePartners";
 import StudentSupportPage from "./supportStudent";
 import AwardsTestimonialsPage from "../pages/AwardTestimonial";
 import ContactPage from "../pages/contactPage";
+import HeroSection from "./Hero";
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -77,83 +78,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 pt-16 ">
       {/* Hero Section with Animated Robotics Showcase */}
-      <section className="relative h-[90vh] overflow-hidden ">
-        <div
-          className="absolute inset-0 bg-black/30 z-10"
-          onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => setIsHovering(false)}
-        >
-          {/* Navigation Arrows */}
-          {isHovering && (
-            <>
-              <button
-                onClick={prevSlide}
-                className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 p-2 rounded-full transition-all"
-              >
-                <ChevronLeft className="w-8 h-8 text-white" />
-              </button>
-              <button
-                onClick={nextSlide}
-                className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 p-2 rounded-full transition-all"
-              >
-                <ChevronRight className="w-8 h-8 text-white" />
-              </button>
-            </>
-          )}
-        </div>
-
-        {/* Animated Slides */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentSlide}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-            className="absolute  flex  inset-0"
-          >
-            <div className="absolute bottom-20 left-10 z-20 text-white max-w-lg">
-              <motion.h1
-                initial={{ y: 50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.3 }}
-                className="text-4xl md:text-6xl font-bold text-black dark:text-gold mb-4"
-              >
-                {roboticsImages[currentSlide].title}
-              </motion.h1>
-              <motion.p
-                initial={{ y: 50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.6 }}
-                className="text-xl md:text-2xl"
-              >
-                {roboticsImages[currentSlide].description}
-              </motion.p>
-            </div>
-            <motion.img
-              src={roboticsImages[currentSlide].src}
-              alt={roboticsImages[currentSlide].alt}
-              className="w-full h-full object-fill object-top"
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-            />
-          </motion.div>
-        </AnimatePresence>
-
-        {/* Slide Indicators */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex space-x-2">
-          {roboticsImages.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all ${
-                currentSlide === index ? "bg-white w-6" : "bg-white/50"
-              }`}
-            />
-          ))}
-        </div>
-      </section>
+     <HeroSection />
       <EventsSection />
       <UniqueFeaturesPartners />
       <StudentSupportPage />
