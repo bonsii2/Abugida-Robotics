@@ -4,7 +4,7 @@ import { Target, Eye, Goal, Sparkles } from "lucide-react";
 
 const FancyMissionPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br md:py-16 from-blue-50 via-purple-50 to-indigo-50 dark:from-gray-900 dark:via-black dark:to-purple-900 py-20 px-4">
+    <div className="min-h-screen bg-white md:py-16  dark:bg-gray-800 py-20 px-4">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-12">
         {/* Logo Section with Animated Border */}
         <div className="relative w-full lg:w-2/5 flex justify-center">

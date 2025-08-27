@@ -6,12 +6,12 @@ import InstructorsSection from "./OurInstructor";
 
 function About() {
   return (
-    <>
+    <div className='bg-white'>
       <MissionSection />
       <FounderSection />
       <ManagerSection />
       <InstructorsSection />
-    </>
+    </div>
   );
 }
 

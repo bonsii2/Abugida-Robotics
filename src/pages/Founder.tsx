@@ -28,11 +28,11 @@ const FounderSection = () => {
               <div className="absolute -inset-2 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 rounded-full blur-xl opacity-50"></div>
 
               {/* Image */}
-              <div className="relative  rounded-2xl overflow-hidden border-4 border-white rounded-full dark:border-gray-800 shadow-2xl">
+              <div className="relative   overflow-hidden border-4 border-white  dark:border-gray-800 shadow-2xl">
                 <img
                   src={founderIMage}
                   alt="Mihiret Walga - Founder and CEO"
-                  className="w-full h-84 max-w-sm rounded-full object-cover transform hover:scale-105 transition-transform duration-700"
+                  className="w-full h-84 max-w-sm  object-cover transform hover:scale-105 transition-transform duration-700"
                 />
 
                 {/* Overlay gradient */}
