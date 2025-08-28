@@ -7,6 +7,48 @@ import {
   Heart,
   Award,
 } from "lucide-react";
+import smc20191 from  "../assets/2019-1.jpg"
+import smc20192 from  "../assets/2019-2.jpg"
+import smc20193 from  "../assets/2019-3.jpg"
+import smc20194 from  "../assets/2019-4.jpg"
+import smc20211 from  "../assets/2021-1.jpg"
+import smc20212 from  "../assets/2021-2.jpg"
+import smc20213 from  "../assets/2021-3.jpg"
+import smc20214 from  "../assets/2021-4.jpg"
+import smc20215 from  "../assets/2021-4.jpg"
+import smc20231 from  "../assets/2023-1.jpg"
+import smc20232 from  "../assets/2023-2.jpg"
+import smc20233 from  "../assets/2023-3.jpg"
+import smc20234 from  "../assets/2023-4.jpg"
+import smc20235 from  "../assets/2023-5.jpg"
+import smc20236 from  "../assets/2023-6.jpg"
+import research1 from "../assets/research-1.jpg"
+import research2 from "../assets/research-2.jpg"
+import research3 from "../assets/research-3.jpg"
+import research4 from "../assets/research-4.jpg"
+import research5 from "../assets/research-5.jpg"
+import research6 from "../assets/research-6.jpg"
+import covid1 from "../assets/covid-1.jpg"
+import covid2 from "../assets/covid-2.jpg"
+import covid3 from "../assets/covid-3.jpg"
+import covid4 from "../assets/covid-4.jpg"
+import covid5 from "../assets/covid-5.jpg"
+import covid6 from "../assets/covid-6.jpg"
+import covid7 from "../assets/covid-7.jpg"
+import robofest1 from "../assets/robofest-1.jpg"
+import robofest2 from "../assets/robofest-2.jpg"
+import robofest3 from "../assets/robofest-3.jpg"
+import robofest4 from "../assets/robofest-4.jpg"
+import robofest5 from "../assets/robofest-5.jpg"
+import robofest6 from "../assets/robofest-6.jpg"
+import robofest7 from "../assets/robofest-7.jpg"
+import robofest8 from "../assets/robofest-8.jpg"
+
+
+
+
+
+
 
 
 
@@ -20,8 +62,7 @@ const ActivitiesPage = () => {
       id: 1,
       category: "2019 summer camp",
       year: 2019,
-      image:
-        "https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: smc20191,
       title: "Robotics Fundamentals",
       description: "Students learning basic robotics concepts",
     },
@@ -29,136 +70,341 @@ const ActivitiesPage = () => {
       id: 2,
       category: "2019 summer camp",
       year: 2019,
-      image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: smc20192,
       title: "Team Building",
       description: "Group activities and team projects",
     },
     {
       id: 3,
+      category: "2019 summer camp",
+      year: 2019,
+      image: smc20193,
+      title: "Team Building",
+      description: "Group activities and team projects",
+    },
+    {
+      id: 4,
+      category: "2019 summer camp",
+      year: 2019,
+      image: smc20194,
+      title: "Team Building",
+      description: "Group activities and team projects",
+    },
+
+    {
+      id: 5,
       category: "2020 summer camp",
       year: 2020,
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       title: "Virtual Learning",
       description: "Adapting to online education during pandemic",
     },
     {
-      id: 4,
+      id: 6,
       category: "2020 summer camp",
       year: 2020,
       image:
-        "https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       title: "Remote Projects",
       description: "Students working on remote robotics projects",
     },
     {
-      id: 5,
+      id: 7,
       category: "2021 summer camp",
       year: 2021,
-      image:
-        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: smc20211,
       title: "Hybrid Learning",
       description: "Combining in-person and online sessions",
     },
     {
-      id: 6,
+      id: 8,
       category: "2021 summer camp",
       year: 2021,
-      image:
-        "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: smc20212,
       title: "Hands-on Workshops",
       description: "Practical robotics workshops",
     },
     {
-      id: 7,
-      category: "2022 summer camp",
-      year: 2022,
-      image:
-        "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      id: 9,
+      category: "2021 summer camp",
+      year: 2021,
+      image: smc20213,
       title: "Advanced Programming",
       description: "Learning advanced coding techniques",
     },
     {
-      id: 8,
-      category: "2022 summer camp",
-      year: 2022,
-      image:
-        "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      id: 10,
+      category: "2021 summer camp",
+      year: 2021,
+      image: smc20214,
       title: "Competition Prep",
       description: "Preparing for robotics competitions",
     },
     {
-      id: 9,
-      category: "2023 summer camp",
-      year: 2023,
-      image:
-        "https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      id: 11,
+      category: "2021 summer camp",
+      year: 2021,
+      image: smc20215,
       title: "AI Integration",
       description: "Incorporating AI into robotics projects",
     },
     {
-      id: 10,
+      id: 12,
       category: "2023 summer camp",
       year: 2023,
-      image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: smc20231,
       title: "Innovation Showcase",
       description: "Students presenting their innovations",
     },
     {
-      id: 11,
-      category: "Field research visit",
-      year: 2022,
-      image:
-        "https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      id: 13,
+      category: "2023 summer camp",
+      year: 2023,
+      image: smc20232,
       title: "Industry Visit",
       description: "Visiting tech companies for research",
     },
     {
-      id: 12,
-      category: "Field research visit",
+      id: 14,
+      category: "2023 summer camp",
       year: 2023,
-      image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: smc20233,
       title: "University Collaboration",
       description: "Research collaboration with universities",
     },
     {
-      id: 13,
-      category: "Covid 19 projects",
-      year: 2020,
-      image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      id: 15,
+      category: "2023 summer camp",
+      year: 2023,
+      image: smc20234,
       title: "Health Tech Solutions",
       description: "Developing solutions during pandemic",
     },
     {
-      id: 14,
-      category: "Covid 19 projects",
-      year: 2021,
-      image:
-        "https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      id: 16,
+      category: "2023 summer camp",
+      year: 2023,
+      image: smc20235,
       title: "Remote Learning Tools",
       description: "Creating tools for remote education",
     },
     {
       id: 15,
-      category: "Robofest Ethiopia",
-      year: 2022,
-      image:
-        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      category: "2023 summer camp",
+      year: 2023,
+      image: smc20236,
       title: "National Competition",
       description: "Annual robotics festival in Ethiopia",
     },
     {
       id: 16,
-      category: "Robofest Ethiopia",
+      category: "2020 summer camp",
       year: 2023,
       image:
         "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       title: "Innovation Challenge",
       description: "Students competing in robotics challenges",
+    },
+    {
+      id: 17,
+      category: "Field research visit",
+      year: 2023,
+      image: research1,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 18,
+      category: "Field research visit",
+      year: 2023,
+      image: research2,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 19,
+      category: "Field research visit",
+      year: 2023,
+      image: research3,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 20,
+      category: "Field research visit",
+      year: 2023,
+      image: research4,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 21,
+      category: "Field research visit",
+      year: 2023,
+      image: research5,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 22,
+      category: "Field research visit",
+      year: 2023,
+      image: research6,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 21,
+      category: "Field research visit",
+      year: 2023,
+      image: research5,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 22,
+      category: "Field research visit",
+      year: 2023,
+      image: research5,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 23,
+      category: "Field research visit",
+      year: 2023,
+      image: research5,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 21,
+      category: "Field research visit",
+      year: 2023,
+      image: research5,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 23,
+      category: "Covid 19 projects",
+      year: 2023,
+      image: covid1,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 24,
+      category: "Covid 19 projects",
+      year: 2023,
+      image: covid2,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 25,
+      category: "Covid 19 projects",
+      year: 2023,
+      image: covid3,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 26,
+      category: "Covid 19 projects",
+      year: 2023,
+      image: covid4,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 27,
+      category: "Covid 19 projects",
+      year: 2023,
+      image: covid5,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 28,
+      category: "Covid 19 projects",
+      year: 2023,
+      image: covid6,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 29,
+      category: "Covid 19 projects",
+      year: 2023,
+      image: covid7,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 30,
+      category: "Robofest Ethiopia",
+      year: 2023,
+      image: robofest1,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 31,
+      category: "Robofest Ethiopia",
+      year: 2023,
+      image: robofest2,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 32,
+      category: "Robofest Ethiopia",
+      year: 2023,
+      image: robofest3,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 33,
+      category: "Robofest Ethiopia",
+      year: 2023,
+      image: robofest4,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 34,
+      category: "Robofest Ethiopia",
+      year: 2023,
+      image: robofest5,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 35,
+      category: "Robofest Ethiopia",
+      year: 2023,
+      image: robofest6,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 36,
+      category: "Robofest Ethiopia",
+      year: 2023,
+      image: robofest7,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
+    },
+    {
+      id: 37,
+      category: "Robofest Ethiopia",
+      year: 2023,
+      image: robofest8,
+      title: "National Competition",
+      description: "Annual robotics festival in Ethiopia",
     },
   ];
 
