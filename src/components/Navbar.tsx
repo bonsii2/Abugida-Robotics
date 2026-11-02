@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import Logo from "../assets/image.png";
 import AnimatedLink from "./AnimatedLink";

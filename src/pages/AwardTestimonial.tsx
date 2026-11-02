@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import appriciation1 from "../assets/Award of appreciation.jpg";
 import firstAward from "../assets/First Lego League East Africa, 2019.png";

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Logo from "../assets/logo.jpg";
 import robofest from "../assets/robofest.png";
 import aau from "../assets/aau.png";
@@ -8,7 +8,6 @@ import stemi from "../assets/stemi.png";
 import avishkra from "../assets/avishkar.png";
 
 const UniqueFeaturesPartners = () => {
-  const [darkMode, setDarkMode] = useState(false);
 
   // Check system preference or saved preference
   useEffect(() => {
@@ -16,7 +15,6 @@ const UniqueFeaturesPartners = () => {
       localStorage.getItem("darkMode") === "true" ||
       (window.matchMedia("(prefers-color-scheme: dark)").matches &&
         localStorage.getItem("darkMode") !== "false");
-    setDarkMode(isDark);
     document.documentElement.classList.toggle("dark", isDark);
   }, []);
 

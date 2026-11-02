@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import supportrobot from "../assets/robot-blank-sign-removebg-preview.png";
 
 const StudentSupportPage = () => {

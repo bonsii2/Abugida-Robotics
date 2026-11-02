@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Users, Target, BookOpen, ArrowUp } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Users, Target, BookOpen } from "lucide-react";
 import ManagerImage from "../assets/Professional Portrait of Middle-Aged Man.png";
 
 const ManagerSection = () => {
