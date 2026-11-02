@@ -1,12 +1,8 @@
-import React from "react";
 import {
-  Target,
   Users,
   Building,
   Heart,
   ArrowRight,
-  BookOpen,
-  Star,
   Zap,
 } from "lucide-react";
 import stemhero from "../assets/stemhero.jpg";

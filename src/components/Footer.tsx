@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Mail,
   Phone,
@@ -8,7 +7,6 @@ import {
   Instagram,
   Youtube,
 } from "lucide-react";
-import { Link } from "react-router-dom";
 import AnimatedLink from "./AnimatedLink";
 
 const Footer = () => {

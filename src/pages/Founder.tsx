@@ -1,5 +1,4 @@
-import React from "react";
-import { Award, BookOpen, Users, Brain, Sparkles } from "lucide-react";
+import { Award, BookOpen, Brain, Sparkles } from "lucide-react";
 import founderIMage from "../assets/Confident Elegance in Portrait Style (1).png";
 
 const FounderSection = () => {

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import AnimatedButton from "../components/Button";
-import { Calendar, Clock, MapPin, Bookmark } from "lucide-react";
+import { MapPin, Bookmark } from "lucide-react";
 
 interface Event {
   id: number;
@@ -73,7 +73,6 @@ const EventCard = ({ event, index }: EventCardProps) => {
           <AnimatedButton
             variant="primary"
             onClick={() => console.log(`Join event: ${event.title}`)}
-            size="sm"
             className="flex-shrink-0"
           >
             Join Event

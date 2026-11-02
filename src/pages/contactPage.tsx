@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   MapPin,
   Phone,
@@ -9,7 +9,6 @@ import {
   Linkedin,
   MessageCircle,
 } from "lucide-react";
-import { href } from "react-router-dom";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({

@@ -1,10 +1,8 @@
-import React from "react";
 import {
   ShoppingCart,
   Star,
   Zap,
   Shield,
-  Calendar,
   MessageCircle,
   Rocket,
   Gift,

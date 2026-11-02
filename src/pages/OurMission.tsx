@@ -1,6 +1,5 @@
-import React from "react";
 import Logo from "../assets/logo.jpg";
-import { Target, Eye, Goal, Sparkles } from "lucide-react";
+import { Target, Eye, Goal } from "lucide-react";
 
 const FancyMissionPage = () => {
   return (
